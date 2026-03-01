@@ -1,0 +1,33 @@
+{
+  "booking": {
+    "button": "Book Appointment",
+    "title": "Book a visit",
+    "available": "Available"
+  },
+  "call": {
+    "button": "Call Now",
+    "title": "Call us"
+  },
+  "location": {
+    "title": "Location",
+    "hours": "Hours",
+    "directions": "Directions"
+  },
+  "contact": {
+    "title": "Contact",
+    "sendMessage": "Send Message"
+  },
+  "social": {
+    "followUs": "Follow Us",
+    "onPlatform": "on {platform}"
+  },
+  "buttons": {
+    "appointments": "Appointments",
+    "services": "Services",
+    "about": "About Us",
+    "contact": "Contact",
+    "gallery": "Gallery",
+    "reviews": "Reviews",
+    "offers": "Special Offers"
+  }
+}

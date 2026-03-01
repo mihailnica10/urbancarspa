@@ -1,0 +1,50 @@
+---
+/**
+ * StructuredData.astro - JSON-LD structured data for SEO
+ *
+ * Usage:
+ * <StructuredData
+ *   type="LocalBusiness"
+ *   data={{
+ *     name: "Business Name",
+ *     description: "Description",
+ *     url: "https://example.com",
+ *     telephone: "+40-123-456-789",
+ *     address: {
+ *       streetAddress: "Street 123",
+ *       addressLocality: "City",
+ *       addressCountry: "RO"
+ *     }
+ *   }}
+ * />
+ */
+interface Props {
+  type: 'LocalBusiness' | 'Organization' | 'ProfessionalService' | 'MedicalClinic'
+  data: Record<string, unknown>
+}
+
+const { type, data } = Astro.props
+
+// Build the structured data object
+const structuredData = {
+  '@context': 'https://schema.org',
+  '@type': type,
+  ...data
+}
+
+// Add defaults for LocalBusiness/MedicalClinic
+if (type === 'LocalBusiness' || type === 'MedicalClinic') {
+  if (!data['@type']) structuredData['@type'] = type
+  if (!data['openingHours']) {
+    structuredData.openingHours = 'Mo-Su 00:00-23:59'
+  }
+  if (!data['priceRange']) {
+    structuredData.priceRange = '$$'
+  }
+}
+---
+
+<script
+  set:html={JSON.stringify(structuredData)}
+  type="application/ld+json"
+/>

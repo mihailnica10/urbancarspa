@@ -1,0 +1,107 @@
+{
+  "appName": "clin.ro",
+  "tagline": "Pagini de aterizare pentru afacerea ta",
+  "nav": {
+    "home": "Acasă",
+    "about": "Despre",
+    "pricing": "Prețuri",
+    "contact": "Contact",
+    "login": "Autentificare",
+    "logout": "Deconectare",
+    "dashboard": "Panou de control",
+    "settings": "Setări"
+  },
+  "hero": {
+    "title": "Pagini de Aterizare Frumoase",
+    "subtitle": "pentru Afacerea Ta",
+    "description": "Creează și gestionează pagini de aterizare personalizate în câteva minute. Perfect pentru detaileri auto, saloane, restaurante și orice afacere locală.",
+    "cta": "Începe Gratuit",
+    "learnMore": "Află Mai Multe"
+  },
+  "features": {
+    "title": "Tot Ce Ai Nevoie",
+    "description": "Funcții simple și puternice pentru a ajuta afacerea ta să iasă în evidență",
+    "customBranding": {
+      "title": "Branding Personalizat",
+      "description": "Logo-uri, culori și stiluri personalizate pentru a se potrivi brandului tău"
+    },
+    "socialLinks": {
+      "title": "Link-uri Social Media",
+      "description": "Conectează-ți toate platformele de social media într-un singur loc"
+    },
+    "customButtons": {
+      "title": "Butoane Personalizate",
+      "description": "Adaugă butoane pentru programări, oferte speciale și multe altele"
+    },
+    "secureHosting": {
+      "title": "Găzduire Sigură",
+      "description": "Hosting securizat cu SSL automat și backup zilnic"
+    },
+    "easyManagement": {
+      "title": "Gestionare Ușoară",
+      "description": "Actualizează conținutul tău instantaneu, fără cunoștințe tehnice"
+    },
+    "customDomain": {
+      "title": "Domeniu Personalizat",
+      "description": "Folosește propriul tău domeniu sau subdomeniu"
+    }
+  },
+  "howItWorks": {
+    "title": "Cum Funcționează",
+    "description": "Începe în trei pași simpli",
+    "step1": {
+      "title": "Creează Cont",
+      "description": "Înregistrează-te în mai puțin de un minut"
+    },
+    "step2": {
+      "title": "Personalizează",
+      "description": "Adaugă logo-ul, culorile și conținutul tău"
+    },
+    "step3": {
+      "title": "Lansează",
+      "description": "Pagina ta este gata și accesibilă imediat"
+    }
+  },
+  "pricing": {
+    "title": "Prețuri Simple",
+    "description": "Începe gratuit, scalează pe măsură ce crești",
+    "free": {
+      "title": "Gratuit",
+      "description": "pentru totdeauna",
+      "features": [
+        "O pagină de aterizare",
+        "Personalizare de bază",
+        "Până la 3 link-uri social media",
+        "Subdomeniu clin.ro"
+      ]
+    },
+    "pro": {
+      "title": "Pro",
+      "description": "pe lună",
+      "features": [
+        "Pagini nelimitate",
+        "Personalizare completă",
+        "Link-uri social media nelimitate",
+        "Domeniu personalizat",
+        "Suport prioritar"
+      ]
+    }
+  },
+  "cta": {
+    "title": "Pregătit să Lansezi Pagina Ta?",
+    "subtitle": "Începe astăzi gratuit",
+    "button": "Începe Acum",
+    "comingSoon": "În curând"
+  },
+  "footer": {
+    "copyright": "© {year} {name}. Toate drepturile rezervate.",
+    "admin": "Admin",
+    "privacy": "Confidențialitate",
+    "terms": "Termeni și condiții"
+  },
+  "language": {
+    "switch": "Schimbă Limba",
+    "ro": "Română",
+    "en": "Engleză"
+  }
+}

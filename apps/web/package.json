@@ -1,0 +1,41 @@
+{
+  "name": "@clinro/web",
+  "version": "0.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview",
+    "lint": "eslint .",
+    "db:generate": "drizzle-kit generate",
+    "db:migrate:local": "wrangler d1 migrations apply clin-ro-db --local",
+    "db:migrate:remote": "wrangler d1 migrations apply clin-ro-db --remote",
+    "db:seed:local": "wrangler d1 execute clin-ro-db --local --file=../../drizzle/0001_seed.sql",
+    "db:seed:remote": "wrangler d1 execute clin-ro-db --remote --file=../../drizzle/0001_seed.sql",
+    "deploy": "bun run build && wrangler pages deploy dist --project-name=clin-ro"
+  },
+  "dependencies": {
+    "@astrojs/cloudflare": "^12.6.12",
+    "@astrojs/react": "^4.4.2",
+    "@astrojs/sitemap": "^3.7.0",
+    "@clinro/api": "workspace:*",
+    "@clinro/i18n": "workspace:*",
+    "@clinro/ui": "workspace:*",
+    "@clinro/utils": "workspace:*",
+    "@clinro/types": "workspace:*",
+    "lucide-react": "^0.575.0",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1"
+  },
+  "devDependencies": {
+    "@clinro/config": "workspace:*",
+    "@cloudflare/workers-types": "^4.20260305.0",
+    "@types/react": "^18.3.28",
+    "@types/react-dom": "^18.3.7",
+    "astro": "^5.18.0",
+    "drizzle-orm": "^0.45.1",
+    "typescript": "~5.9.3",
+    "wrangler": "^4.69.0"
+  }
+}

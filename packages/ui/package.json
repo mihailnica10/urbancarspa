@@ -1,0 +1,25 @@
+{
+  "name": "@clinro/ui",
+  "version": "0.0.0",
+  "private": true,
+  "type": "module",
+  "main": "./src/index.ts",
+  "exports": {
+    ".": "./src/index.ts",
+    "./styles.css": "./src/styles.css",
+    "./theme": "./src/theme/index.ts",
+    "./theme.js": "./src/theme/index.ts",
+    "./theme/*": "./src/theme/*",
+    "./theme/*.js": "./src/theme/*.ts"
+  },
+  "dependencies": {
+    "@clinro/utils": "workspace:*",
+    "class-variance-authority": "^0.7.1",
+    "react": "^18.3.1"
+  },
+  "devDependencies": {
+    "@clinro/config": "workspace:*",
+    "tailwindcss": "^4.1.17",
+    "typescript": "~5.9.3"
+  }
+}

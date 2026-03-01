@@ -1,0 +1,10 @@
+---
+import Layout from '@/layouts/Layout.astro'
+
+const { locale = 'ro' } = Astro.params
+---
+
+<Layout title="CLIN-RO" locale={locale}>
+  <h1>CLIN-RO</h1>
+  <p>Hello from locale: {locale}</p>
+</Layout>

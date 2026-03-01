@@ -1,0 +1,42 @@
+{
+  "hero": {
+    "title": "CLIN-RO",
+    "subtitle": "Link in bio for professionals",
+    "description": "Create your personal link page in seconds. Free and simple.",
+    "cta": "Get Started",
+    "learnMore": "Learn More"
+  },
+  "features": {
+    "title": "Features",
+    "description": "Everything you need for a professional link page",
+    "customBranding": {
+      "title": "Custom Branding",
+      "description": "Choose from multiple design themes to express your unique style"
+    },
+    "socialLinks": {
+      "title": "Social Links",
+      "description": "Add links to all your social platforms"
+    },
+    "customButtons": {
+      "title": "Custom Buttons",
+      "description": "Create custom buttons for your important links"
+    },
+    "secureHosting": {
+      "title": "Secure Hosting",
+      "description": "Hosted on Cloudflare for maximum speed and security"
+    },
+    "easyManagement": {
+      "title": "Easy Management",
+      "description": "Intuitive admin panel for content management"
+    },
+    "customDomain": {
+      "title": "Custom Domain",
+      "description": "Use your own domain for complete branding"
+    }
+  },
+  "cta": {
+    "title": "Ready to start?",
+    "subtitle": "Create your link page in seconds",
+    "button": "Create Account"
+  }
+}

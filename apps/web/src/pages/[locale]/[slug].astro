@@ -1,0 +1,120 @@
+---
+import Layout from '@/layouts/Layout.astro'
+import { ThemeProvider } from '@clinro/ui/theme'
+import { getTranslator } from '@clinro/i18n/server'
+import { getTenantBySlug } from '@clinro/api'
+
+const { locale, slug } = Astro.params
+const t = getTranslator(locale as 'ro' | 'en')
+
+// Fetch tenant data
+const tenantData = await getTenantBySlug(Astro.locals.runtime?.env.DB, slug)
+
+if (!tenantData) {
+  return Astro.redirect('/404')
+}
+
+const { tenant, theme, socialLinks, customButtons } = tenantData
+---
+
+<Layout title={tenant.name} locale={locale}>
+  <ThemeProvider initialTheme={tenant.themeId || 'editorial-brutalist'} isTenantPage={true}>
+    <main class="min-h-screen bg-[var(--color-bg)] flex flex-col items-center justify-center px-4 sm:px-6 lg:px-8 relative overflow-hidden">
+      {/* Background gradient effects */}
+      <div class="absolute inset-0 pointer-events-none">
+        <div class="absolute top-1/4 left-1/4 w-96 h-96 rounded-full blur-3xl animate-float opacity-20"
+          style={{ backgroundColor: `rgb(${theme.primaryColor})` }}
+        />
+        <div class="absolute bottom-1/4 right-1/4 w-96 h-96 rounded-full blur-3xl animate-float opacity-10"
+          style={{ backgroundColor: `rgb(${theme.primaryColor})` }}
+        />
+      </div>
+
+      {/* Content wrapper */}
+      <div class="relative z-10 flex flex-col items-center justify-center w-full max-w-md mx-auto py-12 sm:py-16 lg:py-20">
+        {/* Logo Section */}
+        {tenant.logoSvg && (
+          <div class="mb-8">
+            <div set:html={tenant.logoSvg} class="w-24 h-24" />
+          </div>
+        )}
+
+        {/* Brand name */}
+        <h1 class="text-5xl sm:text-6xl lg:text-7xl font-bold tracking-tight text-center text-[var(--color-fg)]">
+          {tenant.name}
+        </h1>
+
+        {/* Tagline */}
+        {tenant.tagline && (
+          <>
+            <p class="text-[var(--color-muted)] text-sm sm:text-base uppercase tracking-[0.3em] font-medium mt-6">
+              {tenant.tagline}
+            </p>
+
+            {/* Divider */}
+            <div class="w-full max-w-[200px] h-px mt-10 bg-gradient-to-r from-transparent via-[var(--color-border)] to-transparent" />
+          </>
+        )}
+
+        {/* Custom Buttons */}
+        {customButtons.filter(b => b.isEnabled).length > 0 && (
+          <nav class="w-full space-y-3 sm:space-y-4 mb-8" aria-label="Action buttons">
+            {customButtons
+              .filter(b => b.isEnabled)
+              .sort((a, b) => (a.displayOrder ?? 0) - (b.displayOrder ?? 0))
+              .map(button => (
+                <a
+                  href={button.url}
+                  class={`flex items-center justify-center gap-2 px-6 py-3 rounded font-medium transition w-full ${
+                    button.buttonVariant === 'default'
+                      ? 'bg-[var(--color-primary)] text-[var(--color-bg)]'
+                      : button.buttonVariant === 'outline'
+                      ? 'border border-[var(--color-primary)] text-[var(--color-primary)]'
+                      : button.buttonVariant === 'ghost'
+                      ? 'text-[var(--color-fg)] hover:bg-[var(--color-surface)]'
+                      : 'bg-[var(--color-surface)] text-[var(--color-fg)]'
+                  }`}
+                >
+                  {button.label}
+                </a>
+              ))}
+          </nav>
+        )}
+
+        {/* Social Media Links */}
+        {socialLinks.filter(l => l.isEnabled).length > 0 && (
+          <nav class="w-full space-y-3 sm:space-y-4" aria-label="Social media links">
+            {socialLinks
+              .filter(l => l.isEnabled)
+              .sort((a, b) => (a.displayOrder ?? 0) - (b.displayOrder ?? 0))
+              .map(link => (
+                <a
+                  href={link.url}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="flex items-center justify-center gap-3 px-6 py-3 border border-[var(--color-border)] rounded text-[var(--color-fg)] hover:bg-[var(--color-surface)] transition w-full"
+                >
+                  {link.iconSvg ? (
+                    <span set:html={link.iconSvg} class="w-5 h-5" />
+                  ) : (
+                    <span class="w-5 h-5">{link.displayName}</span>
+                  )}
+                  <span>{link.displayName}</span>
+                </a>
+              ))}
+          </nav>
+        )}
+      </div>
+
+      {/* Footer */}
+      <footer class="relative z-10 mt-auto pt-8 pb-6 sm:pt-10 sm:pb-8">
+        <div class="flex items-center gap-2 text-[var(--color-muted)] text-xs sm:text-sm">
+          <span>©</span>
+          <span>{new Date().getFullYear()}</span>
+          <span>|</span>
+          <span>{tenant.name}</span>
+        </div>
+      </footer>
+    </main>
+  </ThemeProvider>
+</Layout>

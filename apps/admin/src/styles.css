@@ -1,0 +1,29 @@
+/**
+ * Admin App Styles
+ * Uses the multi-theme system from @clinro/ui
+ */
+
+@import url('../../packages/ui/src/styles.css');
+
+/* Admin-specific overrides */
+:root {
+  --color-bg: #0a0a0a;
+  --color-fg: #ededed;
+  --color-primary: #dc2626;
+  --color-secondary: #27272a;
+  --color-accent: #dc2626;
+  --color-muted: #a1a1aa;
+  --color-border: #27272a;
+  --color-surface: #18181b;
+}
+
+body {
+  margin: 0;
+  font-family: var(--font-body, system-ui, sans-serif);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+#root {
+  min-height: 100vh;
+}

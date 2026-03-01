@@ -1,0 +1,35 @@
+name = "clin-ro"
+compatibility_date = "2024-01-01"
+
+[env.production]
+vars = { ENVIRONMENT = "production" }
+
+[[env.production.d1_databases]]
+binding = "DB"
+database_name = "clin-ro-db"
+database_id = "your-database-id"
+
+[[env.production.kv_namespaces]]
+binding = "SESSIONS"
+id = "your-kv-id"
+
+[[env.production.r2_buckets]]
+binding = "ASSETS"
+bucket_name = "clin-ro-assets"
+
+# Environment: preview
+[env.preview]
+vars = { ENVIRONMENT = "preview" }
+
+[[env.preview.d1_databases]]
+binding = "DB"
+database_name = "clin-ro-db-preview"
+database_id = "your-preview-database-id"
+
+[[env.preview.kv_namespaces]]
+binding = "SESSIONS"
+id = "your-preview-kv-id"
+
+[[env.preview.r2_buckets]]
+binding = "ASSETS"
+bucket_name = "clinro-assets-preview"

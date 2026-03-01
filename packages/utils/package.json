@@ -1,0 +1,24 @@
+{
+  "name": "@clinro/utils",
+  "version": "0.0.0",
+  "private": true,
+  "type": "module",
+  "main": "./src/index.ts",
+  "exports": {
+    ".": "./src/index.ts",
+    "./cn": "./src/cn.ts",
+    "./cn.js": "./src/cn.ts",
+    "./validations/*": "./src/validations/*.ts",
+    "./validations/*.js": "./src/validations/*.ts"
+  },
+  "dependencies": {
+    "@clinro/types": "workspace:*",
+    "clsx": "^2.1.1",
+    "tailwind-merge": "^3.5.0",
+    "zod": "^3.22.0"
+  },
+  "devDependencies": {
+    "@clinro/config": "workspace:*",
+    "typescript": "~5.9.3"
+  }
+}

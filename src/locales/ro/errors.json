@@ -1,0 +1,28 @@
+{
+  "404": {
+    "title": "Pagina Nu a Fost Găsită",
+    "description": "Ne pare rău, dar pagina pe care o cauți nu există.",
+    "backHome": "Înapoi la Acasă"
+  },
+  "500": {
+    "title": "Eroare de Server",
+    "description": "Ceva nu a mers bine. Te rugăm să încerci din nou.",
+    "retry": "Încearcă din Nou"
+  },
+  "auth": {
+    "loginFailed": "Autentificare eșuată",
+    "invalidCredentials": "Email sau parolă incorectă",
+    "sessionExpired": "Sesiunea a expirat",
+    "notAuthorized": "Nu ai permisiunea să accesezi această pagină"
+  },
+  "tenant": {
+    "notFound": "Pagina nu a fost găsită",
+    "inactive": "Această pagină nu este activă"
+  },
+  "validation": {
+    "required": "Acest câmp este obligatoriu",
+    "email": "Te rugăm să introduci o adresă de email validă",
+    "minLength": "Trebuie să aibă cel puțin {min} caractere",
+    "maxLength": "Nu poate avea mai mult de {max} caractere"
+  }
+}

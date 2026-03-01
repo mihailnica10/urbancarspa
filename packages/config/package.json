@@ -1,0 +1,16 @@
+{
+  "name": "@clinro/config",
+  "version": "0.0.0",
+  "private": true,
+  "type": "module",
+  "exports": {
+    "./tsconfig.json": "./tsconfig.json",
+    "./eslint.config.js": "./eslint.config.js",
+    "./prettier.config.js": "./prettier.config.js"
+  },
+  "files": [
+    "tsconfig.json",
+    "eslint.config.js",
+    "prettier.config.js"
+  ]
+}

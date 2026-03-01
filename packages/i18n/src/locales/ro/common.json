@@ -1,0 +1,42 @@
+{
+  "hero": {
+    "title": "CLIN-RO",
+    "subtitle": "Link în bio pentru profesioniști",
+    "description": "Creează-ți pagina personală de link-uri în câteva secunde. Gratuit și simplu.",
+    "cta": "Începe acum",
+    "learnMore": "Află mai multe"
+  },
+  "features": {
+    "title": "Funcționalități",
+    "description": "Tot ce ai nevoie pentru o pagină de link-uri profesionistă",
+    "customBranding": {
+      "title": "Brand Personalizat",
+      "description": "Alege din multiple teme de design pentru a-ți exprima stilul unic"
+    },
+    "socialLinks": {
+      "title": "Link-uri Sociale",
+      "description": "Adaugă link-uri către toate platformele tale sociale"
+    },
+    "customButtons": {
+      "title": "Butoane Personalizate",
+      "description": "Creează butoane personalizate pentru link-urile tale importante"
+    },
+    "secureHosting": {
+      "title": "Găzduire Securizată",
+      "description": "Hostat pe Cloudflare pentru viteză maximă și securitate"
+    },
+    "easyManagement": {
+      "title": "Management Ușor",
+      "description": "Panel de administrare intuitiv pentru gestionarea conținutului"
+    },
+    "customDomain": {
+      "title": "Domeniu Personalizat",
+      "description": "Folosește propriul tău domeniu pentru brand complet"
+    }
+  },
+  "cta": {
+    "title": "Gata să începi?",
+    "subtitle": "Creează-ți pagina de link-uri în câteva secunde",
+    "button": "Creează Cont"
+  }
+}

@@ -1,0 +1,107 @@
+{
+  "appName": "clin.ro",
+  "tagline": "Landing pages for your business",
+  "nav": {
+    "home": "Home",
+    "about": "About",
+    "pricing": "Pricing",
+    "contact": "Contact",
+    "login": "Login",
+    "logout": "Logout",
+    "dashboard": "Dashboard",
+    "settings": "Settings"
+  },
+  "hero": {
+    "title": "Beautiful Landing Pages",
+    "subtitle": "for Your Business",
+    "description": "Create and manage stunning, customizable landing pages in minutes. Perfect for auto detailers, salons, restaurants, and any local business.",
+    "cta": "Get Started Free",
+    "learnMore": "Learn More"
+  },
+  "features": {
+    "title": "Everything You Need",
+    "description": "Simple, powerful features to help your business stand out",
+    "customBranding": {
+      "title": "Custom Branding",
+      "description": "Your logos, colors, and styles to match your brand"
+    },
+    "socialLinks": {
+      "title": "Social Links",
+      "description": "Connect all your social media platforms in one place"
+    },
+    "customButtons": {
+      "title": "Custom Buttons",
+      "description": "Add buttons for appointments, special offers, and more"
+    },
+    "secureHosting": {
+      "title": "Secure Hosting",
+      "description": "Secure hosting with automatic SSL and daily backups"
+    },
+    "easyManagement": {
+      "title": "Easy Management",
+      "description": "Update your content instantly with no technical skills needed"
+    },
+    "customDomain": {
+      "title": "Custom Domain",
+      "description": "Use your own domain or subdomain"
+    }
+  },
+  "howItWorks": {
+    "title": "How It Works",
+    "description": "Get started in three simple steps",
+    "step1": {
+      "title": "Create Account",
+      "description": "Sign up in less than a minute"
+    },
+    "step2": {
+      "title": "Customize",
+      "description": "Add your logo, colors, and content"
+    },
+    "step3": {
+      "title": "Launch",
+      "description": "Your page is ready and live immediately"
+    }
+  },
+  "pricing": {
+    "title": "Simple Pricing",
+    "description": "Start free, scale as you grow",
+    "free": {
+      "title": "Free",
+      "description": "forever",
+      "features": [
+        "One landing page",
+        "Basic customization",
+        "Up to 3 social links",
+        "clin.ro subdomain"
+      ]
+    },
+    "pro": {
+      "title": "Pro",
+      "description": "per month",
+      "features": [
+        "Unlimited landing pages",
+        "Full customization",
+        "Unlimited social links",
+        "Custom domain",
+        "Priority support"
+      ]
+    }
+  },
+  "cta": {
+    "title": "Ready to Launch Your Page?",
+    "subtitle": "Get started today for free",
+    "button": "Get Started Now",
+    "comingSoon": "Coming Soon"
+  },
+  "footer": {
+    "copyright": "© {year} {name}. All rights reserved.",
+    "admin": "Admin",
+    "privacy": "Privacy",
+    "terms": "Terms"
+  },
+  "language": {
+    "switch": "Switch Language",
+    "ro": "Romanian",
+    "en": "English"
+  }
+}

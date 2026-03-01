@@ -1,0 +1,7 @@
+---
+import { SUPPORTED_LOCALES } from '@clinro/i18n/server'
+
+// Redirect root to default locale
+const locale = Astro.cookies.get('locale')?.value || 'ro'
+Astro.redirect(`/${locale}`)
+---

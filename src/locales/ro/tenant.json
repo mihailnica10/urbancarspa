@@ -1,0 +1,33 @@
+{
+  "booking": {
+    "button": "Programare",
+    "title": "Programează o vizită",
+    "available": "Disponibil"
+  },
+  "call": {
+    "button": "Sună Acum",
+    "title": "Sună-ne"
+  },
+  "location": {
+    "title": "Locație",
+    "hours": "Program",
+    "directions": "Indicații"
+  },
+  "contact": {
+    "title": "Contact",
+    "sendMessage": "Trimite Mesaj"
+  },
+  "social": {
+    "followUs": "Urmărește-ne",
+    "onPlatform": "pe {platform}"
+  },
+  "buttons": {
+    "appointments": "Programări",
+    "services": "Servicii",
+    "about": "Despre Noi",
+    "contact": "Contact",
+    "gallery": "Galerie",
+    "reviews": "Recenzii",
+    "offers": "Oferte Speciale"
+  }
+}

@@ -1,0 +1,33 @@
+name = "clin-ro"
+compatibility_date = "2024-01-01"
+pages_build_output_dir = "dist"
+
+# KV namespace for session storage
+[[kv_namespaces]]
+binding = "SESSION"
+id = "e6d5b32117164c7d854505148ec85281"
+
+# D1 Database binding
+[[d1_databases]]
+binding = "DB"
+database_name = "clin-ro-db"
+database_id = "fd72e9f5-1d81-4a1a-a33f-1be5d52f2a47"
+migrations_dir = "drizzle"
+
+# R2 Storage bucket for tenant assets (logos, images, custom SVGs)
+[[r2_buckets]]
+binding = "R2_ASSETS"
+bucket_name = "clin-ro-assets"
+
+# Environment variables (public)
+[vars]
+ENVIRONMENT = "production"
+APP_URL = "https://clin.ro"
+ADMIN_URL = "https://admin.clin.ro"
+SUPPORTED_LOCALES = '["ro", "en"]'
+DEFAULT_LOCALE = "ro"
+
+# Secrets (set via: wrangler pages secret put <NAME>)
+# - SESSION_SECRET: For session cookie encryption (use: openssl rand -base64 32)
+# - CSRF_SECRET: For CSRF token generation (use: openssl rand -base64 32)
+# - GITHUB_TOKEN (optional): For automated deployments

@@ -1,0 +1,14 @@
+# CLIN-RO Robots.txt
+# Allow all crawlers on public content
+
+User-agent: *
+Allow: /
+Disallow: /api/
+Disallow: /admin/
+Disallow: /_astro/
+
+# Sitemap
+Sitemap: https://clin.ro/sitemap.xml
+
+# Crawl-delay (optional, respectful crawling)
+Crawl-delay: 1

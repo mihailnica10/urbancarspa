@@ -1,0 +1,23 @@
+{
+  "name": "@clinro/i18n",
+  "version": "0.0.0",
+  "private": true,
+  "type": "module",
+  "main": "./src/index.ts",
+  "exports": {
+    ".": "./src/index.ts",
+    "./client": "./src/client.ts",
+    "./server": "./src/server.ts",
+    "./locales/*": "./locales/*.json"
+  },
+  "dependencies": {
+    "@clinro/types": "workspace:*",
+    "i18next": "^25.8.13",
+    "i18next-fs-backend": "^2.6.1",
+    "react-i18next": "^16.5.4"
+  },
+  "devDependencies": {
+    "@clinro/config": "workspace:*",
+    "typescript": "~5.9.3"
+  }
+}

@@ -1,0 +1,21 @@
+---
+interface Props {
+  title: string
+  locale: string
+}
+
+const { title, locale } = Astro.props
+---
+
+<!DOCTYPE html>
+<html lang={locale}>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <meta name="description" content="CLIN-RO - Link in bio platform" />
+    <title>{title}</title>
+  </head>
+  <body>
+    <slot />
+  </body>
+</html>
